@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="511.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Grafika.GraController">
+
+
+   <children>
+      <ImageView fx:id="background" fitHeight="511.0" fitWidth="822.0" opacity="0.5" pickOnBounds="true" preserveRatio="false" />
+      <ImageView fx:id="champion" fitHeight="300.0" fitWidth="240.0" layoutX="32.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="monster" fitHeight="300.0" fitWidth="300.0" layoutX="483.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+
+      <VBox fx:id="buttonsAction" alignment="CENTER" layoutX="298.0" layoutY="57.0" prefHeight="300.0" prefWidth="179.0" spacing="20.0" visible="false">
+         <children>
+            <Button fx:id="weakbutton" mnemonicParsing="false" onAction="#weak" text="Weak att" />
+            <Button fx:id="strongbutton" mnemonicParsing="false" onAction="#strong" text="Strong att" />
+            <Button fx:id="blockbutton" mnemonicParsing="false" onAction="#block" text="Block" />
+            <Button fx:id="restbutton" mnemonicParsing="false" onAction="#rest" text="Rest" />
+            <Button fx:id="retreatbutton" mnemonicParsing="false" onAction="#Retreat" text="Retreat" />
+         </children>
+      </VBox>
+      <VBox fx:id="buttonsLocation" alignment="CENTER" layoutX="350.0" layoutY="57.0" prefHeight="300.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <ChoiceBox fx:id="chooseLocation" prefWidth="150.0" />
+            <Button mnemonicParsing="false" onAction="#goTo" text="Zwiedzaj" />
+         </children></VBox>
+      <TextArea fx:id="locationText" layoutX="483.0" layoutY="357.0" prefHeight="118.0" prefWidth="300.0" />
+      <Text fx:id="championName" layoutX="108.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="imie" wrappingWidth="55.0" />
+      <Label layoutX="63.0" layoutY="29.0" prefHeight="18.0" prefWidth="45.0" text=" IMIE" />
+      <Label layoutX="180.0" layoutY="29.0" prefHeight="18.0" prefWidth="33.0" text=" LVL:" />
+      <Text fx:id="championLevel" layoutX="213.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lvl" wrappingWidth="20.560546875" />
+      <Text fx:id="championHealth" layoutX="120.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" hp" wrappingWidth="152" />
+      <Label layoutX="62.0" layoutY="369.0" prefHeight="18.0" prefWidth="45.0" text=" HP:" />
+      <Text fx:id="championEnergy" layoutX="120.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" energy" wrappingWidth="152" />
+      <Label layoutX="59.0" layoutY="395.0" prefHeight="18.0" prefWidth="51.0" text="ENERGY:" />
+      <Text fx:id="championAtack" layoutX="120.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" attack" wrappingWidth="152" />
+      <Label layoutX="59.0" layoutY="418.0" prefHeight="18.0" prefWidth="51.0" text="ATTACK:" />
+      <Label layoutX="59.0" layoutY="443.0" text="DEFENSE:" />
+      <Text fx:id="championDefense" layoutX="120.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="defense" wrappingWidth="152" />
+      <Button layoutX="356.0" layoutY="407.0" mnemonicParsing="false" onAction="#saveChampion" text="Zapisz postać" />
+      <Button layoutX="374.0" layoutY="448.0" mnemonicParsing="false" onAction="#goBack" text="Powrót" />
+   </children>
+</AnchorPane>

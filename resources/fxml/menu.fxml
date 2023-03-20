@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="backgroud" prefHeight="300.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Grafika.MenuController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="61.0" prefHeight="208.0" prefWidth="150.0">
+         <children>
+            <ImageView fx:id="champion" fitHeight="208.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../modele/archer.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="14.0" text="Krzysztof Dwużnik 229870" />
+      <Label layoutX="14.0" layoutY="31.0" text="Wojciech  Cwynar  229856" />
+      <VBox alignment="CENTER" layoutX="149.0" layoutY="61.0" prefHeight="208.0" prefWidth="182.0" spacing="8.0">
+         <Label layoutX="179.0" layoutY="59.0" text="Simple RPG" textAlignment="CENTER">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <ChoiceBox fx:id="chooseCharacter" layoutX="166.0" layoutY="136.0" onAction="#change" prefWidth="150.0" />
+         <HBox alignment="CENTER" layoutX="-30.0" layoutY="100.0" prefHeight="25.0" prefWidth="182.0" spacing="5.0">
+            <Text layoutX="166.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imie:" />
+            <TextField fx:id="characterName" alignment="CENTER" layoutX="199.0" layoutY="105.0" prefHeight="25.0" prefWidth="117.0" text="Janusz" />
+         </HBox>
+         <Button layoutX="166.0" layoutY="170.0" mnemonicParsing="false" onAction="#action" prefHeight="25.0" prefWidth="150.0" text="Nowa Gra" />
+         <ChoiceBox fx:id="chooseLoad" layoutX="166.0" layoutY="206.0" prefWidth="150.0" />
+         <Button layoutX="165.0" layoutY="241.0" mnemonicParsing="false" onAction="#load" prefHeight="25.0" prefWidth="150.0" text="Wczytaj gre" />
+      </VBox>
+
+   </children>
+</AnchorPane>
